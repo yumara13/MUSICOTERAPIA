@@ -3,10 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Guía educativa sobre el uso responsable de la musicoterapia como apoyo complementario para personas autistas.">
+  <meta name="description" content="Guía educativa para comprender el uso responsable de la musicoterapia como apoyo complementario para personas autistas.">
   <meta name="theme-color" content="#f6f4ef">
   <title>Musicoterapia y autismo | Guía TECBA</title>
-
   <style>
     :root {
       --ink: #183b43;
@@ -22,9 +21,7 @@
       --radius: 24px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
@@ -39,13 +36,8 @@
       line-height: 1.65;
     }
 
-    img {
-      max-width: 100%;
-    }
-
-    a {
-      color: var(--teal-dark);
-    }
+    img { max-width: 100%; }
+    a { color: var(--teal-dark); }
 
     .site-header {
       position: sticky;
@@ -125,9 +117,7 @@
       cursor: pointer;
     }
 
-    main {
-      overflow: hidden;
-    }
+    main { overflow: hidden; }
 
     .hero {
       position: relative;
@@ -151,9 +141,7 @@
       font-weight: 800;
     }
 
-    h1, h2, h3, p {
-      margin-top: 0;
-    }
+    h1, h2, h3, p { margin-top: 0; }
 
     h1 {
       max-width: 850px;
@@ -188,9 +176,7 @@
       color: #704a3d;
     }
 
-    .hero-note strong {
-      color: #5e382d;
-    }
+    .hero-note strong { color: #5e382d; }
 
     .note-icon {
       font-size: 1.25rem;
@@ -215,13 +201,8 @@
       font-weight: 700;
     }
 
-    .section {
-      padding: 76px 20px;
-    }
-
-    .section.alt {
-      background: #edf3ef;
-    }
+    .section { padding: 76px 20px; }
+    .section.alt { background: #edf3ef; }
 
     .section-inner {
       width: min(1060px, 100%);
@@ -265,13 +246,8 @@
       font-size: 1.2rem;
     }
 
-    .card p {
-      color: var(--muted);
-    }
-
-    .card p:last-child {
-      margin-bottom: 0;
-    }
+    .card p { color: var(--muted); }
+    .card p:last-child { margin-bottom: 0; }
 
     .icon {
       width: 42px;
@@ -328,6 +304,59 @@
       margin-top: 18px;
       color: var(--muted);
       font-size: .92rem;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .94rem;
+    }
+
+    .info-table thead {
+      background: var(--teal-dark);
+      color: #fff;
+    }
+
+    .info-table th {
+      padding: 16px;
+      text-align: left;
+      vertical-align: top;
+      font-size: .9rem;
+    }
+
+    .info-table td {
+      padding: 16px;
+      border-top: 1px solid var(--line);
+      vertical-align: top;
+      color: var(--muted);
+    }
+
+    .info-table tbody tr:nth-child(even) {
+      background: #f6f8f6;
+    }
+
+    .info-table tbody th[scope="row"] {
+      width: 19%;
+      padding: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--ink);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .info-table td strong { color: var(--ink); }
+
+    .activity-table th:first-child,
+    .safety-table th:first-child {
+      width: 19%;
     }
 
     .routine {
@@ -392,9 +421,7 @@
       color: var(--muted);
     }
 
-    .tip b {
-      color: var(--teal-dark);
-    }
+    .tip b { color: var(--teal-dark); }
 
     .consult {
       display: grid;
@@ -447,9 +474,7 @@
       border-top: 1px solid var(--line);
     }
 
-    .references h3 {
-      font-size: 1rem;
-    }
+    .references h3 { font-size: 1rem; }
 
     .references ul {
       padding-left: 19px;
@@ -458,9 +483,7 @@
       font-size: .9rem;
     }
 
-    .references li + li {
-      margin-top: 8px;
-    }
+    .references li + li { margin-top: 8px; }
 
     .gallery {
       display: grid;
@@ -478,13 +501,8 @@
       box-shadow: var(--shadow);
     }
 
-    .gallery figure:nth-child(4) {
-      grid-column: 2 / span 2;
-    }
-
-    .gallery figure:nth-child(5) {
-      grid-column: 4 / span 2;
-    }
+    .gallery figure:nth-child(4) { grid-column: 2 / span 2; }
+    .gallery figure:nth-child(5) { grid-column: 4 / span 2; }
 
     .gallery img {
       display: block;
@@ -511,13 +529,8 @@
       text-align: center;
     }
 
-    .footer p {
-      margin: 0;
-    }
-
-    .footer strong {
-      color: #fff;
-    }
+    .footer p { margin: 0; }
+    .footer strong { color: #fff; }
 
     :focus-visible {
       outline: 3px solid var(--coral);
@@ -535,9 +548,7 @@
         height: 46px;
       }
 
-      .menu-button {
-        display: block;
-      }
+      .menu-button { display: block; }
 
       .nav-links {
         display: none;
@@ -556,26 +567,16 @@
         gap: 0;
       }
 
-      .nav-links a {
-        padding: 11px 4px;
-      }
-
-      .hero {
-        padding: 60px 20px 54px;
-      }
-
-      .section {
-        padding: 58px 20px;
-      }
+      .nav-links a { padding: 11px 4px; }
+      .hero { padding: 60px 20px 54px; }
+      .section { padding: 58px 20px; }
 
       .two-col,
       .consult {
         grid-template-columns: 1fr;
       }
 
-      .evidence-grid {
-        grid-template-columns: 1fr;
-      }
+      .evidence-grid { grid-template-columns: 1fr; }
 
       .step {
         grid-template-columns: 62px 1fr;
@@ -583,18 +584,9 @@
         padding: 16px;
       }
 
-      .step-total {
-        grid-column: 2;
-      }
-
-      .tips {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-      }
+      .step-total { grid-column: 2; }
+      .tips { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 
       .gallery figure,
       .gallery figure:nth-child(4),
@@ -602,41 +594,80 @@
         grid-column: auto;
       }
 
-      .gallery img {
-        height: 190px;
+      .gallery img { height: 190px; }
+
+      .table-wrap {
+        overflow: visible;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+      }
+
+      .info-table,
+      .info-table tbody,
+      .info-table tr,
+      .info-table td,
+      .info-table tbody th[scope="row"] {
+        display: block;
+        width: 100%;
+      }
+
+      .info-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .info-table tbody tr {
+        margin-bottom: 14px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 17px;
+        background: var(--paper) !important;
+        box-shadow: 0 8px 22px rgba(24, 59, 67, .05);
+      }
+
+      .info-table tbody th[scope="row"] {
+        padding: 14px 16px;
+        border: 0;
+        background: var(--teal-dark);
+        color: #fff;
+      }
+
+      .info-table td {
+        padding: 12px 16px;
+        border-top: 1px solid var(--line);
+      }
+
+      .info-table td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 4px;
+        color: var(--teal);
+        font-size: .73rem;
+        font-weight: 850;
+        letter-spacing: .08em;
+        text-transform: uppercase;
       }
     }
 
     @media (max-width: 420px) {
-      h1 {
-        font-size: 2.35rem;
-      }
-
-      .brand-name {
-        font-size: .69rem;
-      }
-
-      .brand-name span {
-        font-size: .62rem;
-      }
-
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery img {
-        height: 230px;
-      }
-
-      .card {
-        padding: 21px;
-      }
+      h1 { font-size: 2.35rem; }
+      .brand-name { font-size: .69rem; }
+      .brand-name span { font-size: .62rem; }
+      .gallery { grid-template-columns: 1fr; }
+      .gallery img { height: 230px; }
+      .card { padding: 21px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
+      html { scroll-behavior: auto; }
 
       *,
       *::before,
@@ -668,9 +699,11 @@
       </button>
 
       <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="#proposito">Propósito</a>
         <a href="#conceptos">Conceptos</a>
         <a href="#evidencia">Evidencia</a>
-        <a href="#sesion">Sesión en casa</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#seguridad">Seguridad</a>
         <a href="#galeria">Galería</a>
       </nav>
     </div>
@@ -680,7 +713,6 @@
     <section class="hero" id="inicio">
       <div class="hero-inner">
         <span class="eyebrow">Guía visual · material educativo</span>
-
         <h1>La música como <em>apoyo</em> en el autismo</h1>
 
         <p class="hero-copy">
@@ -706,14 +738,37 @@
       </div>
     </section>
 
+    <section class="section" id="proposito">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">00 · Propósito y alcance</span>
+          <h2>Orientación para un uso responsable</h2>
+          <p>
+            Muchas familias observan que la música genera calma o interés, pero puede ser difícil
+            distinguir entre escuchar música de fondo, jugar con sonidos y recibir una intervención
+            profesional de musicoterapia. Esta guía ayuda a reconocer esas diferencias, organizar
+            experiencias previsibles y cuidar la sensibilidad auditiva.
+          </p>
+        </div>
+
+        <div class="wide-callout">
+          <strong>Alcance ético:</strong>
+          este material es educativo e informativo. La musicoterapia no diagnostica el autismo,
+          no prescribe tratamientos médicos y no constituye una cura para el TEA. La intervención
+          clínica requiere valoración y conducción profesional, en coordinación con el equipo
+          interdisciplinario, que puede incluir fisioterapia, psicología, fonoaudiología y medicina.
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="conceptos">
       <div class="section-inner">
         <div class="section-heading">
           <span class="eyebrow">01 · Conceptos clave</span>
           <h2>Primero, conocer a la persona</h2>
           <p>
-            Las fortalezas, preferencias y perfiles sensoriales varían ampliamente.
-            Cualquier apoyo debe adaptarse a cada persona y respetar sus formas de comunicarse.
+            Las fortalezas, preferencias y perfiles sensoriales varían ampliamente. Cualquier apoyo
+            debe adaptarse a cada persona y respetar sus formas de comunicarse.
           </p>
         </div>
 
@@ -722,10 +777,10 @@
             <div class="icon" aria-hidden="true">🌱</div>
             <h3>¿Qué es el TEA?</h3>
             <p>
-              El trastorno del espectro autista es una condición del neurodesarrollo asociada
-              con diferencias en la comunicación y la interacción social, junto con patrones
-              de comportamiento, intereses o actividades restringidos o repetitivos. Cada
-              persona tiene un perfil propio.
+              El trastorno del espectro autista es una condición del neurodesarrollo asociada con
+              diferencias en la comunicación y la interacción social, junto con patrones de
+              comportamiento, intereses o actividades restringidos o repetitivos. Cada persona
+              tiene un perfil propio.
             </p>
           </article>
 
@@ -735,16 +790,17 @@
             <p>
               Es una intervención profesional planificada que emplea experiencias musicales
               —ritmo, melodía, canto, improvisación instrumental o escucha activa— y el vínculo
-              terapéutico para trabajar objetivos funcionales acordados.
+              terapéutico para trabajar objetivos funcionales acordados. La sesión se adapta en
+              tiempo real a las respuestas motoras, emocionales, sociales y sensoriales de la persona.
             </p>
           </article>
         </div>
 
         <div class="wide-callout">
           <strong>Una diferencia importante:</strong>
-          escuchar música de fondo o jugar con instrumentos puede ser agradable y valioso,
-          pero por sí solo no equivale a recibir musicoterapia. En una sesión terapéutica,
-          un profesional cualificado adapta la actividad y el sonido a las respuestas de la persona.
+          escuchar música de fondo o jugar con instrumentos puede ser agradable y valioso, pero por
+          sí solo no equivale a recibir musicoterapia. En una sesión terapéutica, un profesional
+          cualificado adapta la actividad y el sonido a las respuestas de la persona.
         </div>
       </div>
     </section>
@@ -755,9 +811,8 @@
           <span class="eyebrow">02 · Qué dice la investigación</span>
           <h2>Posibles beneficios, expectativas realistas</h2>
           <p>
-            La investigación sugiere que la musicoterapia puede apoyar algunas áreas,
-            pero los resultados no son iguales para todas las personas ni sustituyen otros
-            apoyos indicados.
+            La investigación sugiere que la musicoterapia puede apoyar algunas áreas, pero los
+            resultados no son iguales para todas las personas ni sustituyen otros apoyos indicados.
           </p>
         </div>
 
@@ -766,9 +821,9 @@
             <span class="number">ÁREA 01</span>
             <h3>Interacción y participación</h3>
             <p>
-              Revisiones han identificado posibles beneficios en la interacción social,
-              la comunicación no verbal y la calidad de vida, con respuestas que dependen
-              de las necesidades individuales.
+              Revisiones han identificado posibles beneficios en la interacción social, la
+              comunicación no verbal y la calidad de vida, con respuestas que dependen de las
+              necesidades individuales.
             </p>
           </article>
 
@@ -776,8 +831,8 @@
             <span class="number">ÁREA 02</span>
             <h3>Atención compartida</h3>
             <p>
-              Algunos estudios controlados observaron cambios favorables en conductas de
-              atención conjunta: compartir el interés o el foco de atención con otra persona.
+              Algunos estudios controlados observaron cambios favorables en conductas de atención
+              conjunta: compartir el interés o el foco de atención con otra persona.
             </p>
           </article>
 
@@ -785,29 +840,106 @@
             <span class="number">ÁREA 03</span>
             <h3>Música y comunicación</h3>
             <p>
-              La investigación explora cómo la experiencia musical puede relacionarse con
-              la comunicación social y la coordinación auditivo-motora. La evidencia sigue
-              evolucionando.
+              La investigación explora cómo la experiencia musical puede relacionarse con la
+              comunicación social y la coordinación auditivo-motora. La evidencia sigue evolucionando.
             </p>
           </article>
         </div>
 
         <p class="evidence-caution">
-          La evidencia científica orienta, pero no garantiza un resultado individual.
-          Defina objetivos observables con el equipo profesional y revise periódicamente
-          si la actividad resulta útil y agradable para la persona.
+          La evidencia científica orienta, pero no garantiza un resultado individual. Defina
+          objetivos observables con el equipo profesional y revise periódicamente si la actividad
+          resulta útil y agradable para la persona.
         </p>
+
+        <div class="wide-callout">
+          <strong>Lectura responsable:</strong>
+          los estudios citados investigan intervenciones y resultados específicos. No permiten
+          prometer que una actividad musical produzca el mismo efecto en todas las personas ni
+          reemplazar un plan terapéutico individual.
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="areas-apoyo">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">03 · Áreas de apoyo</span>
+          <h2>Música y objetivos funcionales</h2>
+          <p>
+            Estas son formas en que una experiencia musical puede relacionarse con objetivos de
+            comunicación, participación y rehabilitación. Deben entenderse como posibilidades y
+            adaptarse al plan de cada persona.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="info-table">
+            <thead>
+              <tr>
+                <th scope="col">Área de apoyo</th>
+                <th scope="col">Cómo contribuye la experiencia musical</th>
+                <th scope="col">Relación con fisioterapia / rehabilitación</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Comunicación e interacción</th>
+                <td data-label="Cómo contribuye la experiencia musical">
+                  El canto dialogado y los turnos instrumentales crean intercambios predecibles
+                  sin exigir lenguaje verbal complejo.
+                </td>
+                <td data-label="Relación con fisioterapia / rehabilitación">
+                  Puede facilitar la cooperación y el contacto visual durante el inicio y cierre
+                  de la sesión física.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Atención conjunta</th>
+                <td data-label="Cómo contribuye la experiencia musical">
+                  Compartir un instrumento o responder a una pausa musical puede fomentar mirar,
+                  señalar y sincronizarse con otra persona.
+                </td>
+                <td data-label="Relación con fisioterapia / rehabilitación">
+                  Puede apoyar el seguimiento de demostraciones motoras y consignas secuenciales.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Regulación emocional y sensorial</th>
+                <td data-label="Cómo contribuye la experiencia musical">
+                  Los tempos constantes y las melodías previsibles pueden ayudar a algunas personas
+                  ante cambios de entorno.
+                </td>
+                <td data-label="Relación con fisioterapia / rehabilitación">
+                  Una experiencia agradable puede preparar para la actividad; observe siempre si el
+                  sonido aumenta la tensión o el malestar.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Coordinación auditivo-motora</th>
+                <td data-label="Cómo contribuye la experiencia musical">
+                  El pulso rítmico puede actuar como guía externa para organizar movimientos
+                  bilaterales.
+                </td>
+                <td data-label="Relación con fisioterapia / rehabilitación">
+                  Puede apoyar la sincronización del paso y el control postural, según valoración
+                  profesional.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <section class="section" id="sesion">
       <div class="section-inner">
         <div class="section-heading">
-          <span class="eyebrow">03 · Guía práctica</span>
+          <span class="eyebrow">04 · Guía práctica</span>
           <h2>Una experiencia breve y previsible</h2>
           <p>
-            Como orientación, pruebe entre 10 y 20 minutos, según la tolerancia y el interés
-            de la persona. Puede ajustar el tiempo, hacer pausas o terminar antes.
+            Como orientación, pruebe entre 10 y 20 minutos, según la tolerancia y el interés de
+            la persona. Puede ajustar el tiempo, hacer pausas o terminar antes.
           </p>
         </div>
 
@@ -817,8 +949,8 @@
             <div>
               <h3>Comienzo tranquilo</h3>
               <p>
-                Elija un espacio calmado, apague ruidos de fondo, muestre los instrumentos
-                y use una canción de saludo conocida a volumen bajo.
+                Elija un espacio calmado, apague ruidos de fondo, muestre los instrumentos y use
+                una canción de saludo conocida a volumen bajo.
               </p>
             </div>
             <span class="step-total">Apertura</span>
@@ -829,8 +961,8 @@
             <div>
               <h3>Actividad compartida</h3>
               <p>
-                Elija una o dos propuestas: turnos rítmicos, movimiento acompañado o canto.
-                Deje pausas y observe si la persona inicia, participa o prefiere parar.
+                Elija una o dos propuestas: turnos rítmicos, movimiento acompañado o canto. Deje
+                pausas y observe si la persona inicia, participa o prefiere parar.
               </p>
             </div>
             <span class="step-total">Desarrollo</span>
@@ -841,8 +973,8 @@
             <div>
               <h3>Cierre gradual</h3>
               <p>
-                Baje poco a poco el volumen y el ritmo, guarden juntos los instrumentos
-                y finalicen con una melodía de despedida previsible.
+                Baje poco a poco el volumen y el ritmo, guarden juntos los instrumentos y finalicen
+                con una melodía de despedida previsible.
               </p>
             </div>
             <span class="step-total">Vuelta a la calma</span>
@@ -873,10 +1005,201 @@
       </div>
     </section>
 
+    <section class="section alt" id="actividades">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">05 · Ejemplos de actividades</span>
+          <h2>Ideas para adaptar con cuidado</h2>
+          <p>
+            Las actividades son propuestas orientativas, no ejercicios obligatorios ni sustitutos
+            de una sesión profesional. La persona puede observar, participar, pedir pausa o terminar.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="info-table activity-table">
+            <thead>
+              <tr>
+                <th scope="col">Ejemplo / actividad</th>
+                <th scope="col">Objetivo de apoyo</th>
+                <th scope="col">Desarrollo paso a paso</th>
+                <th scope="col">Adaptación sensorial</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1. Canción de saludo y despedida</th>
+                <td data-label="Objetivo de apoyo">Anticipación, estructura de rutina y vínculo social.</td>
+                <td data-label="Desarrollo paso a paso">
+                  Use la misma melodía corta y suave al iniciar y terminar. Puede incluir el nombre
+                  de la persona y dejar una pausa de 3 a 5 segundos para que responda con mirada,
+                  gesto, sonido o palma.
+                </td>
+                <td data-label="Adaptación sensorial">
+                  Cante con voz cálida y ritmo lento; evite acompañamiento ruidoso si hay
+                  hipersensibilidad.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">2. Diálogo por turnos con percusión suave</th>
+                <td data-label="Objetivo de apoyo">Atención conjunta, espera de turnos e imitación.</td>
+                <td data-label="Desarrollo paso a paso">
+                  Coloque un tambor pequeño o maraca de sonido grave entre ambas personas. Toque
+                  dos golpes suaves, deténgase y ofrezca el turno. Puede imitar los patrones rítmicos
+                  que la persona proponga.
+                </td>
+                <td data-label="Adaptación sensorial">
+                  Prefiera instrumentos de madera o parche grave frente a platillos o timbres
+                  metálicos agudos.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">3. Pulso rítmico para el movimiento</th>
+                <td data-label="Objetivo de apoyo">
+                  Coordinación motora, marcha y equilibrio; con apoyo fisioterapéutico.
+                </td>
+                <td data-label="Desarrollo paso a paso">
+                  Marque un pulso constante de 60–80 pulsos por minuto con palmas suaves o metrónomo
+                  de timbre cálido mientras la persona camina, balancea los brazos o realiza
+                  movimientos guiados.
+                </td>
+                <td data-label="Adaptación sensorial">
+                  Ajuste la velocidad al ritmo natural de marcha; nunca fuerce aceleraciones bruscas.
+                  Coordine los movimientos con fisioterapia.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">4. Pausa musical (“estatuas sonoras”)</th>
+                <td data-label="Objetivo de apoyo">
+                  Autocontrol, atención sostenida y regulación conductual.
+                </td>
+                <td data-label="Desarrollo paso a paso">
+                  Con una melodía agradable, invite a movimientos libres o desplazamientos suaves.
+                  Baje gradualmente el volumen hasta el silencio, detengan el movimiento y respiren
+                  antes de reanudar, si la persona desea.
+                </td>
+                <td data-label="Adaptación sensorial">
+                  Haga el silencio de forma progresiva, sin cortes estridentes, y acompáñelo con un
+                  gesto visual.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">5. Canciones de transición cotidiana</th>
+                <td data-label="Objetivo de apoyo">
+                  Hacer más previsible el cambio de actividad (higiene, traslado o descanso).
+                </td>
+                <td data-label="Desarrollo paso a paso">
+                  Asocie una melodía breve y conocida con momentos específicos, como recoger
+                  materiales o prepararse para dormir, para dar previsibilidad sin repetir órdenes
+                  verbales.
+                </td>
+                <td data-label="Adaptación sensorial">
+                  Mantenga un repertorio estable, elegido junto a la familia según los gustos de la
+                  persona.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">6. Elección musical con apoyo visual</th>
+                <td data-label="Objetivo de apoyo">
+                  Autonomía, toma de decisiones y expresión emocional.
+                </td>
+                <td data-label="Desarrollo paso a paso">
+                  Presente dos o tres tarjetas con imágenes de instrumentos o canciones conocidas,
+                  como “suave”, “alegre”, “tambor” o “descanso”, para que la persona elija qué desea
+                  escuchar o tocar.
+                </td>
+                <td data-label="Adaptación sensorial">
+                  Respete de inmediato si señala “pausa” o “terminar”; valide su derecho a decidir.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="seguridad">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">06 · Seguridad sensorial</span>
+          <h2>Observe y ajuste el estímulo</h2>
+          <p>
+            La misma música puede ser agradable para una persona y molesta para otra. Si aparecen
+            señales de incomodidad, reduzca la intensidad o detenga la actividad.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="info-table safety-table">
+            <thead>
+              <tr>
+                <th scope="col">Aspecto a cuidar</th>
+                <th scope="col">Recomendación segura</th>
+                <th scope="col">Señales de incomodidad (detener o bajar intensidad)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Volumen y timbre</th>
+                <td data-label="Recomendación segura">
+                  Inicie a volumen bajo; priorice sonidos graves y cálidos, como guitarra acústica,
+                  marimba o voz suave.
+                </td>
+                <td data-label="Señales de incomodidad">
+                  Cubrirse los oídos, fruncir el ceño, parpadear con tensión o alejarse de la fuente
+                  sonora.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Consentimiento y ritmo</th>
+                <td data-label="Recomendación segura">
+                  Invite sin obligar a tocar o cantar; permita la observación como una forma válida
+                  de participación.
+                </td>
+                <td data-label="Señales de incomodidad">
+                  Rigidez corporal repentina, aumento de movimientos asociados a angustia, llanto,
+                  irritabilidad o bloqueo.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Entorno y estímulos</th>
+                <td data-label="Recomendación segura">
+                  Evite combinar música con luces parpadeantes o con varias personas hablando al
+                  mismo tiempo.
+                </td>
+                <td data-label="Señales de incomodidad">
+                  Inquietud motora intensa, búsqueda de salir de la habitación o fatiga atencional
+                  marcada.
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Selección musical</th>
+                <td data-label="Recomendación segura">
+                  Parta de los intereses musicales de la persona y ofrezca opciones claras; ajuste
+                  el sonido a sus preferencias.
+                </td>
+                <td data-label="Señales de incomodidad">
+                  Rechazo activo del instrumento o sonido. No insista: ofrezca otra opción o silencio.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section class="section alt" id="profesional">
       <div class="section-inner">
         <div class="section-heading">
-          <span class="eyebrow">04 · Acompañamiento</span>
+          <span class="eyebrow">07 · Acompañamiento</span>
           <h2>¿Cuándo consultar a un profesional?</h2>
         </div>
 
@@ -884,8 +1207,8 @@
           <div class="consult-box">
             <h3>La seguridad y el bienestar van primero</h3>
             <p>
-              Si una experiencia musical provoca malestar o no se ajusta a las necesidades
-              de la persona, deténgala y consulte al equipo que la acompaña.
+              Si una experiencia musical provoca malestar o no se ajusta a las necesidades de la
+              persona, deténgala y consulte al equipo que la acompaña.
             </p>
           </div>
 
@@ -933,7 +1256,7 @@
     <section class="section" id="galeria">
       <div class="section-inner">
         <div class="section-heading">
-          <span class="eyebrow">05 · Material visual</span>
+          <span class="eyebrow">08 · Material visual</span>
           <h2>Imágenes de la guía</h2>
           <p>Las imágenes se muestran completas dentro de sus marcos para conservar su proporción.</p>
         </div>
